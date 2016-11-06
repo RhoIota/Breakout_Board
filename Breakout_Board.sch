@@ -15135,7 +15135,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="C126" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="C127" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="GND115" library="supply1" deviceset="GND" device=""/>
-<part name="GND116" library="supply1" deviceset="GND" device=""/>
+<part name="GND116" library="supply1" deviceset="GND" device="" value="GND_P"/>
 <part name="GND114" library="supply1" deviceset="GND" device=""/>
 <part name="GND113" library="supply1" deviceset="GND" device=""/>
 <part name="GND117" library="supply1" deviceset="GND" device="" value="GND_P"/>
@@ -15151,7 +15151,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="IC105" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="C131" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="C132" library="rcl" deviceset="CPOL-EU" device="D" value="47u"/>
-<part name="GND119" library="supply1" deviceset="GND" device=""/>
+<part name="GND119" library="supply1" deviceset="GND" device="" value="GND_P"/>
 <part name="SV102" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="X103" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="GND104" library="supply1" deviceset="GND" device=""/>
@@ -15692,7 +15692,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="20.32" y1="149.86" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ICP" class="2">
+<net name="ICP" class="0">
 <segment>
 <pinref part="IC103" gate="G$1" pin="ICP"/>
 <wire x1="172.72" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
@@ -15780,10 +15780,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="200.66" y1="241.3" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="165.1" y1="226.06" x2="165.1" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="GND103" gate="1" pin="GND"/>
-</segment>
-<segment>
 <wire x1="172.72" y1="226.06" x2="172.72" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND105" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -15853,10 +15849,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <junction x="271.78" y="162.56"/>
 </segment>
 <segment>
-<pinref part="GND119" gate="1" pin="GND"/>
-<wire x1="342.9" y1="236.22" x2="342.9" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC103" gate="G$1" pin="AGND"/>
 <wire x1="172.72" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 <label x="165.1" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -15890,6 +15882,11 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="139.7" y1="203.2" x2="134.62" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="210.82" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
 <junction x="139.7" y="210.82"/>
+</segment>
+<segment>
+<pinref part="GND103" gate="1" pin="GND"/>
+<pinref part="C117" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="220.98" x2="165.1" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -16342,6 +16339,8 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <pinref part="X103" gate="-2" pin="KL"/>
 <wire x1="378.46" y1="238.76" x2="368.3" y2="238.76" width="0.1524" layer="91"/>
 <junction x="368.3" y="238.76"/>
+<pinref part="GND119" gate="1" pin="GND"/>
+<wire x1="342.9" y1="238.76" x2="342.9" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="3">
@@ -16643,6 +16642,12 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="201,1,342.9,236.22,GND,GND\, GND_P,,,,"/>
+<approved hash="201,1,322.58,96.52,GND,GND\, GND_P,,,,"/>
+<approved hash="201,1,322.58,116.84,GND,GND\, GND_P,,,,"/>
+<approved hash="201,1,317.5,160.02,GND,GND\, GND_P,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
