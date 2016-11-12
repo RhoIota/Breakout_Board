@@ -15044,10 +15044,10 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <class number="0" name="LoV Secondary" width="0" drill="0">
 </class>
 <class number="1" name="HighU" width="0" drill="0">
-<clearance class="0" value="2"/>
+<clearance class="0" value="0.0254"/>
 </class>
 <class number="2" name="HIghI" width="0" drill="0">
-<clearance class="0" value="2"/>
+<clearance class="0" value="0.0254"/>
 <clearance class="1" value="2"/>
 </class>
 <class number="3" name="LoV Primary" width="0" drill="0">
@@ -15081,23 +15081,23 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="R124" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R130" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C112" library="rcl" deviceset="C-EU" device="C0603K" value="2n2"/>
-<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="0R01"/>
+<part name="R104" library="rcl" deviceset="R-EU_" device="R0603" value="4R7"/>
 <part name="IC101" library="analog-devices" deviceset="AD8620" device="R"/>
 <part name="IC102" library="analog-devices" deviceset="AD8620" device="R"/>
 <part name="R125" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C107" library="rcl" deviceset="C-EU" device="C0603K" value="2n2"/>
-<part name="R110" library="rcl" deviceset="R-EU_" device="R0603" value="150R"/>
-<part name="R119" library="rcl" deviceset="R-EU_" device="R0603" value="221k"/>
-<part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="0R01"/>
+<part name="R110" library="rcl" deviceset="R-EU_" device="R0603" value="6k49"/>
+<part name="R119" library="rcl" deviceset="R-EU_" device="R0603" value="2k21"/>
+<part name="R105" library="rcl" deviceset="R-EU_" device="R0603" value="4R7"/>
 <part name="R126" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C108" library="rcl" deviceset="C-EU" device="C0603K" value="2n2"/>
-<part name="R111" library="rcl" deviceset="R-EU_" device="R0603" value="150R"/>
-<part name="R120" library="rcl" deviceset="R-EU_" device="R0603" value="221k"/>
-<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="0R01"/>
+<part name="R111" library="rcl" deviceset="R-EU_" device="R0603" value="6k49"/>
+<part name="R120" library="rcl" deviceset="R-EU_" device="R0603" value="2k21"/>
+<part name="R106" library="rcl" deviceset="R-EU_" device="R0603" value="4R7"/>
 <part name="R127" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C0603K" value="2n2"/>
-<part name="R112" library="rcl" deviceset="R-EU_" device="R0603" value="150R"/>
-<part name="R121" library="rcl" deviceset="R-EU_" device="R0603" value="221k"/>
+<part name="R112" library="rcl" deviceset="R-EU_" device="R0603" value="6k49"/>
+<part name="R121" library="rcl" deviceset="R-EU_" device="R0603" value="2k21"/>
 <part name="IC104" library="recom_own" deviceset="RH/H6" device=""/>
 <part name="R132" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="GND111" library="supply1" deviceset="GND" device=""/>
@@ -15159,11 +15159,11 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="JP101" library="jumper" deviceset="JP1E" device=""/>
 <part name="GND107" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603K" value="1uF"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="0R01"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="4R7"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603K" value="2n2"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="150R"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="221k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="6k49"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="2k21"/>
 <part name="X1" library="con-wago_5.08mm" deviceset="231-538/001-000" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -15184,6 +15184,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <text x="287.02" y="88.9" size="1.778" layer="91">1xSi8641 für SPI</text>
 <text x="43.18" y="220.98" size="1.778" layer="91">29pF = 2x18pF (C_L) - 7pF (C_P)</text>
 <text x="60.96" y="218.44" size="1.778" layer="91">30pF should fit</text>
+<text x="30.48" y="198.12" size="1.778" layer="91">Dimensioniert auf 25 A
+
+Verstärkungsfaktor 1+ 0,3251</text>
 </plain>
 <instances>
 <instance part="IC103" gate="G$1" x="187.96" y="124.46"/>
@@ -16650,4 +16653,10 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
